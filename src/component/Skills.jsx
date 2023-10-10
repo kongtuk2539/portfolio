@@ -37,7 +37,7 @@ function Skills() {
                                 <h2 className=''>Frontend</h2>
                             </div>
                         </div>
-                        <div className='bg-[#F0A2B5] px-10 py-5 flex gap-6 items-center justify-between border-4 shadow-md rounded-md border-[#D2272B] relative -top-6 z-10'>
+                        <div className='bg-[#FCE097] px-10 py-5 flex gap-6 items-center justify-between border-4 shadow-md rounded-md border-[#D2272B] relative -top-6 z-10'>
                             <div>
                                 <img src={hcj} className='w-auto h-[120px]' />
                             </div>
@@ -58,7 +58,7 @@ function Skills() {
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Backend</h2>
                             </div>
-                            <div className='bg-[#F0A2B5] flex flex-col items-center pt-12 gap-8 border-4 h-[500px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
+                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[500px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
                                 <div className='flex'>
                                     <img src={cSharp} className='w-auto h-[120px]' />
                                     <img src={nodeJs} className='w-auto h-[120px]' />
@@ -77,7 +77,7 @@ function Skills() {
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Tools</h2>
                             </div>
-                            <div className='bg-[#F0A2B5] flex flex-col items-center pt-12 gap-8 border-4 h-[500px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
+                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[500px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
                                 <div className='flex items-center gap-4'>
                                     <img src={git} className='w-auto h-[50px]' />
                                     <img src={github} className='w-auto h-[80px]' />

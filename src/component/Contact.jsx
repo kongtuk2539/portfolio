@@ -3,12 +3,15 @@ import emailjs from '@emailjs/browser';
 import Dialog from './Dialog';
 import WarningDialog from './WarningDialog';
 import SuccessDialog from './SuccessDialog';
+import Spinner from './Spinner';
+import DogUser from '../assets/img/pf1.png';
 
 function Contact() {
     const form = useRef();
     const [isOpen, setIsOpen] = useState(false);
     const [isWarningOpen, setIsWarningOpen] = useState(false);
     const [isSuccessOpen, setIsSuccessOpen] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false); // State for controlling the spinner
 
     const openWarningDialog = () => {
         setIsWarningOpen(true);
@@ -42,6 +45,9 @@ function Contact() {
 
 
     const handleConfirm = () => {
+        // Show the spinner while submitting
+        setIsSubmitting(true);
+
         // Get form data
         const formData = new FormData(form.current);
 
@@ -57,23 +63,29 @@ function Contact() {
         if (!isFormValid) {
             closeDialog();
             openWarningDialog();
+            setIsSubmitting(false); // Hide the spinner
             return;
+        } else {
+            // Perform your email sending logic here
+            closeDialog();
+            emailjs
+                .sendForm('service_lq3ybbq', 'template_gge11nt', form.current, 'B1CfCaJTVT8i25sG3')
+                .then(
+                    (result) => {
+                        console.log(result.text);
+                    },
+                    (error) => {
+                        console.log(error.text);
+                    }
+                ).finally(() => {
+                    setTimeout(() => {
+                        setIsSubmitting(false); // Hide the spinner after sending or if there's an error
+                        openSuccessDialog();
+                        form.current.reset();
+                    }, 2000);
+                });
         }
 
-        // Perform your email sending logic here
-        emailjs
-            .sendForm('service_lq3ybbq', 'template_gge11nt', form.current, 'B1CfCaJTVT8i25sG3')
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    form.current.reset();
-                    closeDialog();
-                    openSuccessDialog();
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
     };
 
     const handleCancel = () => {
@@ -87,7 +99,7 @@ function Contact() {
             </div>
             <div className='flex items-center gap-16'>
                 <div className='w-[600px]'>
-                    <img src="/src/assets/img/pf1.png" alt="" />
+                    <img src={DogUser} alt="" />
                 </div>
                 <div className='flex flex-col gap-8 mt-10 ml-10'>
                     <form ref={form} onSubmit={sendEmail}>
@@ -129,6 +141,7 @@ function Contact() {
                             duration={3000} // Set the duration to 3 seconds (3000 milliseconds)
                         />
                     )}
+                    <Spinner isVisible={isSubmitting} /> {/* Show spinner when isSubmitting is true */}
                 </div>
             </div>
         </div >

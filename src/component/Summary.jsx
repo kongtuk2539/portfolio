@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import User from '../assets/img/pf4.png'
 
 function Summary() {
 
@@ -10,7 +11,7 @@ function Summary() {
                         <h1>Summary</h1>
                     </div>
                     <div className='flex flex-col justify-center relative -top-8 left-[180px] z-10 gap-6
-                w-[800px] pr-[200px] pl-[100px] h-[500px] rounded-md border-4 border-[#D2272B] bg-[#F0A2B5]'>
+                w-[800px] pr-[200px] pl-[100px] h-[500px] rounded-md border-4 border-[#D2272B] bg-[#FCE097]'>
                         <h2 className='font-Lilita-One text-3xl hover:animate-bounce hover:cursor-default'>
                             Tho Kongtuk
                         </h2>
@@ -25,7 +26,7 @@ function Summary() {
 
                 {/* data-aos="fade-right" data-aos-duration="2000" */}
                 <div className='p-4 relative right-[110px] z-20' >
-                    <img src="/src/assets/img/pf4.png" alt=""
+                    <img src={User} alt=""
                         className='w-[380px]' />
                 </div>
             </div>
