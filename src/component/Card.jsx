@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import gitLogo from '../assets/img/skills/tool/icon-git-hub.png'
 
 
 function Card({ content }) {
@@ -23,7 +24,7 @@ function Card({ content }) {
                     <div className='mt-4 w-auto
                     flex items-center gap-6'>
                         <a href={content.link} target='blank' onMouseEnter={() => setOnOverGit(true)} onMouseLeave={() => setOnOverGit(false)} className='z-20' >
-                            <img src="/src/assets/img/skills/tool/icon-git-hub.png" className='w-[60px] hover:animate-bounce ' alt="" />
+                            <img src={gitLogo} className='w-[60px] hover:animate-bounce ' alt="" />
                         </a>
                         <div className={` w-[180px] pr-4 relative z-10 text-[#FF6F6F]
                         rounded-sm
