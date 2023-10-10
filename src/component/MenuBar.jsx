@@ -45,24 +45,13 @@ function MenuBar() {
                 </li>
                 <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[36px] hover:font-Lilita-One' >
                     <Link
-                        to="qualification"
+                        to="contact"
                         spy={true}
                         smooth={true}
                         offset={-50} // Adjust the offset as needed
                         duration={500}
                     >
-                        Qualification
-                    </Link>
-                </li>
-                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[36px] hover:font-Lilita-One' >
-                    <Link
-                        to="Contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-50} // Adjust the offset as needed
-                        duration={500}
-                    >
-                        contact
+                        Contact
                     </Link>
                 </li>
             </ul>

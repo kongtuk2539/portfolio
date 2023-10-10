@@ -24,9 +24,9 @@ function Summary() {
 
 
                 {/* data-aos="fade-right" data-aos-duration="2000" */}
-                <div className='shadow-md rounded-md bg-[#D2272B] p-4 relative right-[100px] z-20' >
-                    <img src="/src/assets/img/51823928_2013785722002619_527084524073385984_n.jpg" alt=""
-                        className='w-[350px]' />
+                <div className='p-4 relative right-[110px] z-20' >
+                    <img src="/src/assets/img/pf4.png" alt=""
+                        className='w-[380px]' />
                 </div>
             </div>
         </div>
