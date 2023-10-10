@@ -8,12 +8,12 @@ function Card({ content }) {
     console.log(onOverGit)
 
     return (
-        <div className='w-[400px]  px-4 flex flex-col justify-center rounded-lg drop-shadow-lg hover:drop-shadow-2xl hover:cursor-pointer'>
+        <div className='w-auto lg:w-[400px]  px-4 flex flex-col justify-center rounded-lg drop-shadow-lg hover:drop-shadow-2xl hover:cursor-pointer'>
             <div className='z-10 flex justify-center'>
                 <img src={content.img} alt=""
                     className='rounded-lg w-[240px] h-[180px] ' />
             </div>
-            <div className='mt-6 bg-[#FCE097] h-[430px] p-4 relative -top-20 rounded'>
+            <div className='mt-6 px-6 lg:px-0 bg-[#FCE097] h-auto lg:h-[430px] p-4 relative -top-20 rounded'>
                 <div className='mt-16'>
                     <h3 className='font-Lilita-One text-3xl mb-4'>
                         {content.header}

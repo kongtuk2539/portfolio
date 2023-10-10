@@ -11,7 +11,7 @@ function MenuBar() {
                 </h2>
             </div>
             <ul className='font-Nunito font-bold text-lg flex justify-center w-full lg:w-auto gap-4'>
-                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[36px] hover:font-Lilita-One'>
+                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[24px] lg:hover:text-[36px] hover:font-Lilita-One'>
                     <Link
                         to="summary"
                         spy={true}
@@ -22,7 +22,7 @@ function MenuBar() {
                         Summary
                     </Link>
                 </li>
-                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[36px] hover:font-Lilita-One' >
+                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[24px] lg:hover:text-[36px] hover:font-Lilita-One' >
                     <Link
                         to="skills"
                         spy={true}
@@ -33,7 +33,7 @@ function MenuBar() {
                         Skills
                     </Link>
                 </li>
-                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[36px] hover:font-Lilita-One' >
+                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[24px] lg:hover:text-[36px] hover:font-Lilita-One' >
                     <Link
                         to="projects"
                         spy={true}
@@ -44,7 +44,7 @@ function MenuBar() {
                         Projects
                     </Link>
                 </li>
-                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[36px] hover:font-Lilita-One' >
+                <li className='cursor-pointer transition-all duration-300 hover:text-[#D2272B] hover:text-[24px] lg:hover:text-[36px] hover:font-Lilita-One' >
                     <Link
                         to="contact"
                         spy={true}
