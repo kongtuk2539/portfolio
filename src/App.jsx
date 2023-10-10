@@ -8,7 +8,7 @@ import Contact from './component/Contact'
 function App() {
 
   return (
-    <div className='px-301 bg-[#F6CAA8] -z-40'>
+    <div className='px-0 lg:px-301 bg-[#F6CAA8] -z-40'>
       <MenuBar />
 
       <Summary />

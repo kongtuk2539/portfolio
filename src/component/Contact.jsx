@@ -97,8 +97,8 @@ function Contact() {
             <div className='mb-8 text-center font-Lilita-One text-[48px] text-[#D2272B]'>
                 <h2>Contact</h2>
             </div>
-            <div className='flex items-center gap-16'>
-                <div className='w-[600px]'>
+            <div className='flex items-center justify-center gap-16'>
+                <div className='w-[600px] hidden lg:block'>
                     <img src={DogUser} alt="" />
                 </div>
                 <div className='flex flex-col gap-8 mt-10 ml-10'>

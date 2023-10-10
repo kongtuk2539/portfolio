@@ -29,15 +29,15 @@ function Skills() {
             <div className='text-center text-[#D2272B] font-Lilita-One text-[48px]'>
                 <h1>Skills</h1>
             </div>
-            <div className=' h-auto flex justify-between items-center px-6 py-12'>
+            <div className=' h-auto flex justify-between items-center px-0 lg:px-6 py-12'>
                 <div className='flex flex-col'>
-                    <div className='py-10'>
-                        <div className='flex font-Lilita-One text-[36px] h-14 justify-center py-auto'>
+                    <div className='py-10 hidden lg:block'>
+                        <div className='flex font-Lilita-One text-[36px] h-14 justify-center'>
                             <div className='bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Frontend</h2>
                             </div>
                         </div>
-                        <div className='bg-[#FCE097] px-10 py-5 flex gap-6 items-center justify-between border-4 shadow-md rounded-md border-[#D2272B] relative -top-6 z-10'>
+                        <div className='bg-[#FCE097] px-10 py-5 flex gap-6 w-[400px] lg:w-auto items-center justify-between border-4 shadow-md rounded-md border-[#D2272B] relative -top-6 z-10'>
                             <div>
                                 <img src={hcj} className='w-auto h-[120px]' />
                             </div>
@@ -53,7 +53,27 @@ function Skills() {
                     </div>
 
 
-                    <div className='flex justify-center gap-12'>
+                    <div className='flex flex-row flex-wrap lg:flex-nowrap justify-center gap-12'>
+
+                        <div className='px-10 py-5 flex flex-col gap-4 items-center lg:hidden'>
+                            <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
+                                <h2 className=''>FrontEnd</h2>
+                            </div>
+                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[580px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
+                                <div>
+                                    <img src={hcj} className='w-auto h-[120px]' />
+                                </div>
+                                <div className='flex flex-row-reverse lg:flex-row'>
+                                    <img src={react} className='w-auto h-[120px]' />
+                                    <img src={angular} className='w-auto h-[120px]' />
+                                </div>
+                                <div className='flex items-center gap-3 flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap'>
+                                    <img src={bootstrap} className='w-auto h-[120px]' />
+                                    <img src={tailwind} className='w-auto h-[40px]' />
+                                </div>
+                            </div>
+                        </div>
+
                         <div className='px-10 py-5 flex flex-col gap-4 items-center'>
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Backend</h2>

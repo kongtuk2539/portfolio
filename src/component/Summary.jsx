@@ -5,13 +5,13 @@ function Summary() {
 
     return (
         <div id='summary' >
-            <div className='h-[900px] flex justify-between items-center py-20'>
+            <div className='h-[900px] flex justify-between items-center py-20 mx-8 lg:mx-0'>
                 <div className='flex flex-col'>
-                    <div className='font-Lilita-One text-[#D2272B] shadow-xl text-[48px] relative w-fit p-5 top-6 left-[280px] rounded-md bg-[#F0B91E] z-20'>
+                    <div className='font-Lilita-One text-[#D2272B] shadow-xl text-[48px] relative w-fit p-5 top-6 left-10 lg:left-[280px] rounded-md bg-[#F0B91E] z-20'>
                         <h1>Summary</h1>
                     </div>
-                    <div className='flex flex-col justify-center relative -top-8 left-[180px] z-10 gap-6
-                w-[800px] pr-[200px] pl-[100px] h-[500px] rounded-md border-4 border-[#D2272B] bg-[#FCE097]'>
+                    <div className='flex flex-col justify-center relative -top-8 lg:left-[180px] z-10 gap-6
+                w-auto lg:w-[800px] p-8 lg:pr-[200px] lg:pl-[100px] h-[500px] rounded-md border-4 border-[#D2272B] bg-[#FCE097]'>
                         <h2 className='font-Lilita-One text-3xl hover:animate-bounce hover:cursor-default'>
                             Tho Kongtuk
                         </h2>
@@ -25,7 +25,7 @@ function Summary() {
 
 
                 {/* data-aos="fade-right" data-aos-duration="2000" */}
-                <div className='p-4 relative right-[110px] z-20' >
+                <div className='p-4 relative right-[110px] z-20 hidden lg:block' >
                     <img src={User} alt=""
                         className='w-[380px]' />
                 </div>

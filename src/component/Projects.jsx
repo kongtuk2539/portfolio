@@ -45,12 +45,12 @@ function Projects() {
             <div className='text-center font-Lilita-One text-[48px] text-[#D2272B]'>
                 <h1>Projects</h1>
             </div>
-            <div className='h-auto flex justify-between items-center px-6 py-14'>
+            <div className='h-auto flex flex-col lg:flex-row justify-between items-center px-6 py-14'>
                 <Card content={fitUpPorject} />
                 <Card content={enrollSystem} />
                 <Card content={reactAssessment} />
             </div>
-            <div className='h-auto flex justify-center gap-6 items-center px-6'>
+            <div className='h-auto flex flex-col lg:flex-row justify-center gap-6 items-center px-6'>
                 <Card content={findYourHat} />
                 <Card content={cloneStaticWebsite} />
             </div>
