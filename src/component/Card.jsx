@@ -13,7 +13,7 @@ function Card({ content }) {
                 <img src={content.img} alt=""
                     className='rounded-lg w-[240px] h-[180px] ' />
             </div>
-            <div className='mt-6 px-6 lg:px-0 bg-[#FCE097] h-auto lg:h-[430px] p-4 relative -top-20 rounded'>
+            <div className='mt-6 px-6 bg-[#FCE097] h-auto lg:h-[430px] p-4 relative -top-20 rounded'>
                 <div className='mt-16'>
                     <h3 className='font-Lilita-One text-3xl mb-4'>
                         {content.header}

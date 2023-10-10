@@ -5,7 +5,7 @@ function Summary() {
 
     return (
         <div id='summary' >
-            <div className='h-[900px] flex justify-between items-center py-20 mx-8 lg:mx-0'>
+            <div className='h-auto lg:h-[900px] flex justify-between items-start lg:items-center py-20 mx-8 lg:mx-0'>
                 <div className='flex flex-col'>
                     <div className='font-Lilita-One text-[#D2272B] shadow-xl text-[48px] relative w-fit p-5 top-6 left-10 lg:left-[280px] rounded-md bg-[#F0B91E] z-20'>
                         <h1>Summary</h1>
