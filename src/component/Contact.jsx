@@ -97,26 +97,26 @@ function Contact() {
             <div className='mb-8 text-center font-Lilita-One text-[48px] text-[#D2272B]'>
                 <h2>Contact</h2>
             </div>
-            <div className='flex items-center justify-center gap-16'>
+            <div className='flex items-center justify-center gap-16 '>
                 <div className='w-[600px] hidden lg:block'>
                     <img src={DogUser} alt="" />
                 </div>
-                <div className='flex flex-col gap-8 mt-10 ml-0 lg:ml-10'>
+                <div className=' mt-10 ml-0 lg:ml-10 w-full lg:w-auto p-6 lg:p-0'>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className='flex flex-col mb-4'>
                             <p className='font-Lilita-One text-[28px]'>Name</p>
-                            <input type="text" name="user_name" className='p-6 font-Nunito font-bold w-[400px] lg:w-[480px] h-[60px] rounded-md bg-[#FCE097] ring-2 ring-[#D2272B] hover:ring-4 ' />
+                            <input type="text" name="user_name" className='p-6 font-Nunito font-bold w-full lg:w-[480px] h-[60px] rounded-md bg-[#FCE097] ring-2 ring-[#D2272B] hover:ring-4 ' />
                         </div>
                         <div className='flex flex-col mb-4'>
                             <p className='font-Lilita-One text-[28px]'>Email</p>
-                            <input type="email" name="user_email" className='p-6 font-Nunito font-bold w-[400px] lg:w-[480px] h-[60px] rounded-md bg-[#FCE097] ring-2 ring-[#D2272B] hover:ring-4 ' />
+                            <input type="email" name="user_email" className='p-6 font-Nunito font-bold w-full lg:w-[480px] h-[60px] rounded-md bg-[#FCE097] ring-2 ring-[#D2272B] hover:ring-4 ' />
                         </div>
                         <div className='flex flex-col'>
                             <p className='font-Lilita-One text-[28px]'>Message</p>
-                            <textarea name="message" className='p-6 font-Nunito font-bold w-[400px] lg:w-[480px] h-[180px] rounded-md bg-[#FCE097] ring-2 ring-[#D2272B] hover:ring-4 ' />
+                            <textarea name="message" className='p-6 font-Nunito font-bold w-full lg:w-[480px] h-[180px] rounded-md bg-[#FCE097] ring-2 ring-[#D2272B] hover:ring-4 ' />
                         </div>
                         <div className='flex flex-col gap-4'>
-                            <button type="submit" className='mt-6 font-Lilita-One text-[26px] text-[#D2272B] w-[400px] lg:w-[480px] h-[60px] rounded-md bg-[#F0B91E] hover:bg-[#F0B91E]/[0.8] ring-2 ring-[#D2272B] hover:ring-4 '>Submit</button>
+                            <button type="submit" className='mt-6 font-Lilita-One text-[26px] text-[#D2272B] w-full lg:w-[480px] h-[60px] rounded-md bg-[#F0B91E] hover:bg-[#F0B91E]/[0.8] ring-2 ring-[#D2272B] hover:ring-4 '>Submit</button>
                         </div>
                     </form>
                     {isOpen && (

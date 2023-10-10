@@ -53,23 +53,23 @@ function Skills() {
                     </div>
 
 
-                    <div className='flex flex-row flex-wrap lg:flex-nowrap justify-center gap-12'>
+                    <div className='w-full flex flex-row flex-wrap lg:flex-nowrap justify-center gap-12'>
 
                         <div className='px-10 py-5 flex flex-col gap-4 items-center lg:hidden'>
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>FrontEnd</h2>
                             </div>
-                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[580px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
+                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[600px] w-full lg:w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
                                 <div>
-                                    <img src={hcj} className='w-auto h-[120px]' />
+                                    <img src={hcj} className='w-auto h-[100px]' />
                                 </div>
-                                <div className='flex flex-row-reverse lg:flex-row'>
-                                    <img src={react} className='w-auto h-[120px]' />
+                                <div className='flex flex-row-reverse lg:flex-row flex-wrap justify-center'>
+                                    <img src={react} className='w-auto h-[100px]' />
                                     <img src={angular} className='w-auto h-[120px]' />
                                 </div>
                                 <div className='flex items-center gap-3 flex-wrap flex-col-reverse lg:flex-row lg:flex-nowrap'>
-                                    <img src={bootstrap} className='w-auto h-[120px]' />
-                                    <img src={tailwind} className='w-auto h-[40px]' />
+                                    <img src={bootstrap} className='w-auto h-[100px]' />
+                                    <img src={tailwind} className='w-auto h-[28px]' />
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ function Skills() {
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Backend</h2>
                             </div>
-                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[500px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
+                            <div className='bg-[#FCE097] flex flex-col items-center px-4 lg:px-0 pt-12 gap-8 border-4 h-[500px] w-full lg:w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
                                 <div className='flex'>
                                     <img src={cSharp} className='w-auto h-[120px]' />
                                     <img src={nodeJs} className='w-auto h-[120px]' />
@@ -97,15 +97,16 @@ function Skills() {
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Tools</h2>
                             </div>
-                            <div className='bg-[#FCE097] flex flex-col items-center pt-12 gap-8 border-4 h-[500px] w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
+                            <div className='bg-[#FCE097] flex flex-col items-center px-4 lg:px-0   pt-12 gap-8 border-4 h-[550px] lg:h-[500px] w-full lg:w-[400px] shadow-md rounded-md border-[#D2272B] relative -top-10 z-10'>
                                 <div className='flex items-center gap-4'>
                                     <img src={git} className='w-auto h-[50px]' />
                                     <img src={github} className='w-auto h-[80px]' />
-                                    <img src={gitdesktop} className='w-auto h-[80px]' />
+                                    <img src={gitdesktop} className='w-auto h-[80px] hidden lg:block' />
                                 </div>
-                                <div className='flex items-center gap-12'>
+                                <div className='flex items-center gap-4 lg:gap-12 flex-wrap justify-center'>
+                                    <img src={gitdesktop} className='w-auto h-[80px] block lg:hidden' />
                                     <img src={mssql} className='w-auto h-[120px]' />
-                                    <div className='font-Nunito text-base flex flex-col text-center'>
+                                    <div className='font-Nunito text-base flex-col text-center flex'>
                                         <img src={postman} className='w-auto h-[80px]' />
                                         <p>postman</p>
                                     </div>
