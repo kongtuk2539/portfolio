@@ -46,16 +46,16 @@ function Projects() {
         viewApp: 'https://react-assessment-pink.vercel.app/'
     }
     return (
-        <div id='projects' className='pt-5'>
+        <div id='projects' className='pt-5' data-aos="zoom-in-down">
             <div className='text-center font-Lilita-One text-[48px] text-[#D2272B]'>
                 <h1>Projects</h1>
             </div>
-            <div className='h-auto flex flex-col lg:flex-row justify-between items-center px-6 py-14'>
+            <div className='h-auto flex flex-col lg:flex-row justify-between items-center px-6 py-14' data-aos="zoom-in-left">
                 <Card content={fitUpPorject} />
                 <Card content={enrollSystem} />
                 <Card content={reactAssessment} />
             </div>
-            <div className='h-auto flex flex-col lg:flex-row justify-center gap-6 items-center px-6'>
+            <div className='h-auto flex flex-col lg:flex-row justify-center gap-6 items-center px-6' data-aos="zoom-in-right">
                 <Card content={findYourHat} />
                 <Card content={cloneStaticWebsite} />
             </div>

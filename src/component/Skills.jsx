@@ -25,7 +25,7 @@ import vscode from '../assets/img/skills/tool/icon-vs-code.png'
 
 function Skills() {
     return (
-        <div id='skills' className='pt-5' >
+        <div id='skills' className='pt-5' data-aos="zoom-in-down">
             <div className='text-center text-[#D2272B] font-Lilita-One text-[48px]'>
                 <h1>Skills</h1>
             </div>
@@ -74,7 +74,7 @@ function Skills() {
                             </div>
                         </div>
 
-                        <div className='px-10 py-5 flex flex-col gap-4 items-center'>
+                        <div className='px-10 py-5 flex flex-col gap-4 items-center' data-aos="fade-right">
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Backend</h2>
                             </div>
@@ -93,7 +93,7 @@ function Skills() {
                             </div>
                         </div>
 
-                        <div className='px-10 py-5 flex flex-col gap-4 items-center'>
+                        <div className='px-10 py-5 flex flex-col gap-4 items-center' data-aos="fade-left">
                             <div className='font-Lilita-One text-[36px] h-14 text-center py-auto bg-[#F0B91E] text-[#D2272B] w-fit px-4 rounded shadow-xl z-20'>
                                 <h2 className=''>Tools</h2>
                             </div>
