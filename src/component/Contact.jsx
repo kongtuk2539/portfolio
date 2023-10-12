@@ -85,7 +85,7 @@ function Contact() {
                         setIsSubmitting(false); // Hide the spinner after sending or if there's an error
                         openSuccessDialog();
                         form.current.reset();
-                    }, 2000);
+                    }, 1000);
                 });
         }
 
