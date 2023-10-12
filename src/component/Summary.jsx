@@ -17,8 +17,8 @@ function Summary() {
                     <div className='font-Lilita-One text-[#D2272B] shadow-xl text-[24px] lg:text-[36px] relative w-fit p-2 lg:p-3 -top-3 lg:top-0 left-10 lg:left-[280px] rounded-md bg-[#F0B91E] z-20'>
                         <h1>Summary</h1>
                     </div>
-                    <div className='flex flex-col justify-center relative -top-8 pt-16 lg:pt-0 lg:left-[180px] z-10 gap-6
-                w-auto lg:w-[800px] p-8 lg:pr-[200px] lg:pl-[100px] h-[500px] rounded-md border-4 border-[#D2272B] bg-[#FCE097]'>
+                    <div className='flex flex-col justify-center relative -top-8 h-auto pt-16 lg:pt-0 lg:left-[180px] z-10 gap-6
+                w-auto lg:w-[800px] p-8 lg:pr-[200px] lg:pl-[100px] lg:h-[500px] rounded-md border-4 border-[#D2272B] bg-[#FCE097]'>
                         <h2 className='font-Lilita-One text-3xl animate-bounce hover:cursor-default'>
                             Hi, I am <span className='text-[#D2272B]'>Tho Kongtuk</span> <br />
                             I am a <span className='text-[#D2272B] uppercase'>software developer</span>

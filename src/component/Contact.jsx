@@ -5,6 +5,9 @@ import WarningDialog from './WarningDialog';
 import SuccessDialog from './SuccessDialog';
 import Spinner from './Spinner';
 import DogUser from '../assets/img/pf1.png';
+import iconPhone from '../assets/img/icon-phone.png'
+import iconMail from '../assets/img/icon-mail.png'
+import iconLinked from '../assets/img/icon-linkedin.png'
 
 function Contact() {
     const form = useRef();
@@ -94,12 +97,58 @@ function Contact() {
 
     return (
         <div id='contact' className='h-auto pt-14 pb-[120px]' >
-            <div className='mb-8 text-center font-Lilita-One text-[48px] text-[#D2272B]'>
+            <div className='mb-0 lg:mb-8 text-center font-Lilita-One text-[48px] text-[#D2272B]'>
                 <h2>Contact</h2>
             </div>
-            <div className='flex items-center justify-center gap-16 '>
-                <div className='w-[600px] hidden lg:block'>
-                    <img src={DogUser} alt="" />
+            <div className='flex lg:flex-row flex-col-reverse items-center justify-center gap-16 '>
+                <div className='flex flex-col items-center gap-12'>
+                    <div className='w-[280px] hidden lg:block'>
+                        <img src={DogUser} alt="" />
+                    </div>
+                    <div className='flex flex-col gap-2 border-2 p-4 border-[#D2272B] rounded'>
+                        <div className='relative -top-[45px] left-[180px] font-Lilita-One text-[24px] w-fit p-2 rounded bg-[#F0B91E] text-[#D2272B]'>
+                            <h2>Talk to me</h2>
+                        </div>
+                        <div className='flex flex-col gap-1 w-[300px] items-center  p-2  bg-[#FCE097] rounded'>
+                            <div className='flex items-center gap-1'>
+                                <h3 className='font-Lilita-One text-[18px]'>
+                                    Email
+                                </h3>
+                                <a href="">
+                                    <img src={iconMail} className='w-6' />
+                                </a>
+                            </div>
+                            <p className='font-Nunito text-base font-bold'>
+                                t.kongtuk@gmail.com
+                            </p>
+                        </div>
+                        <div className='flex flex-col gap-1 w-[300px] items-center  p-2  bg-[#FCE097] rounded'>
+                            <div className='flex items-center gap-1'>
+                                <h3 className='font-Lilita-One text-[18px]'>
+                                    LinkedIn
+                                </h3>
+                                <a href="">
+                                    <img src={iconLinked} className='w-6' />
+                                </a>
+                            </div>
+                            <p className='font-Nunito text-base font-bold'>
+                                Tho Kongtuk
+                            </p>
+                        </div>
+                        <div className='flex flex-col gap-1 w-[300px] items-center   p-2  bg-[#FCE097] rounded'>
+                            <div className='flex items-center gap-1'>
+                                <h3 className='font-Lilita-One text-[18px]'>
+                                    Phone
+                                </h3>
+                                <a href="">
+                                    <img src={iconPhone} className='w-6' />
+                                </a>
+                            </div>
+                            <p className='font-Nunito text-base font-bold'>
+                                (+66) 834930546
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className=' mt-10 ml-0 lg:ml-10 w-full lg:w-auto p-6 lg:p-0'>
                     <form ref={form} onSubmit={sendEmail}>
