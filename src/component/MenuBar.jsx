@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'react-scroll';
+import logo from '../assets/img/web-logo.png'
 
 function MenuBar() {
     return (
-        <div className='flex justify-between p-4 sticky top-0 z-30 bg-[#F0B91E] drop-shadow-lg'>
-            <div>
-                <h2 className='font-Lilita-One font-bold text-4xl cursor-pointer transition-all duration-300 hover:text-[#D2272B]
+        <div className='flex items-center justify-between p-4 sticky top-0 z-30 bg-[#F0B91E] drop-shadow-lg'>
+            <div className='hidden lg:flex'>
+                <div className='absolute top-1 rounded-full w-auto p-2 bg-[#FFFFFF]'>
+                    <img src={logo} className='w-[45px]' />
+                </div>
+                <h2 className='pl-[80px] font-Lilita-One font-bold text-4xl cursor-pointer transition-all duration-300 hover:text-[#D2272B]
                 hidden lg:block'>
                     Tho Kongtuk
                 </h2>
