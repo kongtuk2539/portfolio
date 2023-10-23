@@ -6,7 +6,7 @@ import iconGit from '../assets/img/icon-git.png'
 import iconLinked from '../assets/img/icon-linkedin.png'
 
 function Summary() {
-    const linkResume = 'https://drive.google.com/file/d/1P9WjJ9a-5bccoZXJJJsSD16XqZwMeaQs/view?usp=sharing'
+    const linkResume = 'https://drive.google.com/file/d/1cQfMlPprMf4jCBB8gBeTpPJPpzZ_J__G/view?usp=sharing'
     const linkGit = 'https://github.com/kongtuk2539?tab=repositories'
     const linkLinked = 'https://www.linkedin.com/in/tho-kongtuk/'
 
